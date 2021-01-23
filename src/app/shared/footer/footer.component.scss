@@ -1,0 +1,44 @@
+@import '../../../assets/scss/lib.scss';
+footer {
+    background-color: $gray;
+    padding: 20px 0;
+    color: $white;
+    font-size: 12px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column nowrap;
+        @include sm {
+            flex-flow: row wrap;
+        }
+        .socialIcon {
+            display: flex;
+            a {
+                width: 30px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin: 10px;
+                @include sm {
+                    margin: 0 0 0 20px;
+                }
+            }
+            a.facebook {
+                background-image: url('/assets/icons/facebook.svg');
+            }
+            a.pinterest {
+                background-image: url('/assets/icons/pinterest.svg');
+            }
+            a.twitter {
+                background-image: url('/assets/icons/twitter.svg');
+            }
+            a.instagram {
+                background-image: url('/assets/icons/instagram.svg');
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,112 @@
+@import '../../../assets/scss/lib.scss';
+
+ 
+.mat-dialog-content {
+    overflow-y: hidden !important;
+}
+
+section#accountMain{
+    background-color: $gray;
+   
+    .tabArea{
+     
+.mat-tab-label { 
+ 
+    background-color: $red;
+    color: $white;
+    font-weight: 700;
+    border-right: 1px solid $white;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    background-color: $black;
+    color: $white;
+    font-weight: 700;
+    
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+ display: none;
+}
+.mat-tab-header{
+border-bottom: none !important;
+}
+
+aside{
+
+    .content{
+        height: calc(100vh - 18.7rem);
+        padding: 3rem;
+         background-color: $black;
+         color: $white;
+         .innnerContent{
+             width: 50vw;
+
+             .dd{
+                 width: 18rem;
+                 color: $white;
+                .mat-form-field-label ,.mat-select-arrow,.mat-select-value,
+                .mat-form-field-appearance-legacy .mat-form-field-underline{
+                    color: $white !important;
+                }
+                .mat-form-field-appearance-legacy .mat-form-field-underline{
+                    background-color:$white;
+                }
+        
+             }
+
+            .ac{
+           
+                width: 18rem;
+                md-autocomplete input::-webkit-input-placeholder {
+                    color:$black !important;
+                }
+                md-autocomplete input:-moz-placeholder { /* Firefox 18- */
+                    color:$black !important;
+                }
+                
+                md-autocomplete input::-moz-placeholder {  /* Firefox 19+ */
+                    color:$black !important;
+                }
+                
+                md-autocomplete input:-ms-input-placeholder { 
+                    color:$black !important;
+                }
+                .ng-autocomplete {
+                    width:100%;
+                    max-width: 600px;
+                    display: table;
+                    margin: 0 auto;
+                  }
+                  .item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    white-space: nowrap;
+                    line-height: 45px;
+                    height: 45px;
+                    padding: 0 16px;
+                    text-align: left;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                  }
+                  span {
+                    margin-left: 5px;
+                    color: $black !important;
+                  }
+            }
+         }
+    }
+    
+    mat-list-option[aria-selected="true"], mat-list-option:hover  {
+        background: $black !important;
+        color: $white !important;
+      }
+    
+}
+    
+}
+
+}

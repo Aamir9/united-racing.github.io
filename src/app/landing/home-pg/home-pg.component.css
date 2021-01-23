@@ -1,0 +1,724 @@
+section#banner {
+  width: 100%;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/banner-1.jpg");
+  margin-top: 80px;
+}
+
+@media (min-width: 577px) {
+  section#banner {
+    height: 400px;
+  }
+}
+
+section#banner .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#banner .overlay aside {
+  text-align: left;
+  color: #fdfdfd;
+}
+
+section#banner .overlay aside h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #fdfdfd;
+}
+
+@media (min-width: 577px) {
+  section#banner .overlay aside h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+section#banner .overlay aside p {
+  font-size: 18px;
+  color: #fdfdfd;
+}
+
+@media (min-width: 577px) {
+  section#banner .overlay aside p {
+    font-size: 20px;
+  }
+}
+
+section#racingData,
+section#features,
+section#recordTable .overlay,
+section#games,
+section#data,
+section#priceTable {
+  padding: 40px 0;
+}
+
+@media (min-width: 993px) {
+  section#racingData,
+  section#features,
+  section#recordTable .overlay,
+  section#games,
+  section#data,
+  section#priceTable {
+    padding: 60px 0;
+  }
+}
+
+section#racingData h2,
+section#features h2,
+section#recordTable .overlay h2,
+section#games h2,
+section#data h2,
+section#priceTable h2 {
+  text-align: center;
+  color: #2e2e2e;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 993px) {
+  section#racingData h2,
+  section#features h2,
+  section#recordTable .overlay h2,
+  section#games h2,
+  section#data h2,
+  section#priceTable h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+section#racingData .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 993px) {
+  section#racingData .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#racingData .container span {
+  width: 100%;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/assets/images/racing-car.png");
+}
+
+@media (min-width: 577px) {
+  section#racingData .container span {
+    height: 300px;
+  }
+}
+
+@media (min-width: 993px) {
+  section#racingData .container span {
+    width: 470px;
+  }
+}
+
+@media (min-width: 1201px) {
+  section#racingData .container span {
+    width: 600px;
+  }
+}
+
+section#racingData .container aside {
+  width: 100%;
+}
+
+@media (min-width: 993px) {
+  section#racingData .container aside {
+    width: calc(100% - 490px);
+  }
+}
+
+@media (min-width: 1201px) {
+  section#racingData .container aside {
+    width: calc(100% - 640px);
+  }
+}
+
+section#racingData .container aside h2 {
+  text-align: left;
+}
+
+section#racingData .container aside p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+section#features .featureItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+section#features .featureItems aside {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+@media (min-width: 577px) {
+  section#features .featureItems aside {
+    width: calc((100% - 40px) / 2);
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 993px) {
+  section#features .featureItems aside {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+section#features .featureItems aside i {
+  width: 40px;
+  height: 40px;
+  background-color: #d3222a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  display: block;
+}
+
+@media (min-width: 577px) {
+  section#features .featureItems aside i {
+    width: 60px;
+    height: 60px;
+    background-size: 40px;
+  }
+}
+
+section#features .featureItems aside i.helmet {
+  background-image: url("/assets/icons/helmet.svg");
+}
+
+section#features .featureItems aside i.racingCar {
+  background-image: url("/assets/icons/racing-car.svg");
+}
+
+section#features .featureItems aside i.timer {
+  background-image: url("/assets/icons/timer.svg");
+}
+
+section#features .featureItems aside p {
+  width: calc(100% - 55px);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 577px) {
+  section#features .featureItems aside p {
+    width: calc(100% - 80px);
+  }
+}
+
+section#recordTable {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/car-img.jpg");
+}
+
+section#recordTable .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 993px) {
+  section#recordTable .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#recordTable .container h2 {
+  color: #fdfdfd !important;
+  text-align: left;
+}
+
+section#recordTable .container .rdTable {
+  width: 100%;
+}
+
+@media (min-width: 993px) {
+  section#recordTable .container .rdTable {
+    width: calc(100% - 420px);
+  }
+}
+
+section#recordTable .container .topDriver {
+  width: 100%;
+}
+
+@media (min-width: 993px) {
+  section#recordTable .container .topDriver {
+    width: 400px;
+  }
+}
+
+section#recordTable .container .topDriver h2 {
+  margin-top: 40px;
+}
+
+@media (min-width: 993px) {
+  section#recordTable .container .topDriver h2 {
+    margin-top: 0;
+  }
+}
+
+section#recordTable .container .topDriver table#rankTable {
+  width: 200px !important;
+}
+
+section#games {
+  width: 100%;
+  background-color: #2e2e2e;
+}
+
+section#games .container h2 {
+  text-align: center;
+  color: #fdfdfd;
+}
+
+@media (min-width: 577px) {
+  section#games .container h2 {
+    text-align: left;
+  }
+}
+
+section#games .container .gamesInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 993px) {
+  section#games .container .gamesInner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#games .container .gamesInner aside {
+  width: 100%;
+}
+
+@media (min-width: 993px) {
+  section#games .container .gamesInner aside {
+    width: calc(100% - 580px);
+  }
+}
+
+@media (min-width: 1201px) {
+  section#games .container .gamesInner aside {
+    width: calc(100% - 650px);
+  }
+}
+
+section#games .container .gamesInner aside .gamesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 577px) {
+  section#games .container .gamesInner aside .gamesList {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#games .container .gamesInner aside .gamesList ul {
+  width: 100%;
+  margin: 0 10px;
+}
+
+@media (min-width: 577px) {
+  section#games .container .gamesInner aside .gamesList ul {
+    width: calc((100% - 40px) / 2);
+    margin: 0;
+  }
+}
+
+section#games .container .gamesInner aside .gamesList ul li {
+  list-style: none;
+  margin: 3px 0;
+  font-size: 18px;
+  color: #fdfdfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 577px) {
+  section#games .container .gamesInner aside .gamesList ul li {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+}
+
+section#games .container .gamesInner aside .gamesList ul li i {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #d3222a;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
+@media (min-width: 577px) {
+  section#games .container .gamesInner aside .gamesList ul li i {
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+  }
+}
+
+section#games .container .gamesInner aside .gamesList ul li i.helmet {
+  background-image: url("/assets/icons/helmet.svg");
+}
+
+section#games .container .gamesInner aside .gamesList ul li i.racingCar {
+  background-image: url("/assets/icons/racing-car.svg");
+}
+
+section#games .container .gamesInner aside .gamesList ul li i.timer {
+  background-image: url("/assets/icons/timer.svg");
+}
+
+section#games .container .gamesInner aside .gamesList ul li p {
+  width: calc(100% - 50px);
+  font-size: 16px;
+  line-height: 24px;
+  color: #fdfdfd;
+}
+
+@media (min-width: 577px) {
+  section#games .container .gamesInner aside .gamesList ul li p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+section#games .container .gamesInner aside .gamesList ul li:first-child {
+  margin-bottom: 25px;
+}
+
+section#games .container .gamesInner span {
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-image: url("/assets/images/racing-car.png");
+}
+
+@media (min-width: 577px) {
+  section#games .container .gamesInner span {
+    height: 250px;
+  }
+}
+
+@media (min-width: 993px) {
+  section#games .container .gamesInner span {
+    width: 560px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1201px) {
+  section#games .container .gamesInner span {
+    width: 600px;
+  }
+}
+
+section#data {
+  text-align: center;
+}
+
+section#data p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 577px) {
+  section#data p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+}
+
+section#priceTable {
+  background-color: #2e2e2e;
+}
+
+section#priceTable h2 {
+  color: #fdfdfd;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  section#priceTable h2 {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 993px) {
+  section#priceTable h2 {
+    margin-bottom: 90px;
+  }
+}
+
+section#priceTable .priceInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 769px) {
+  section#priceTable .priceInner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#priceTable .priceInner aside {
+  width: 100%;
+  background-color: #fdfdfd;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 15px 5px #3030309a;
+  box-shadow: 0 2px 15px 5px #3030309a;
+  margin: 20px 0;
+}
+
+@media (min-width: 769px) {
+  section#priceTable .priceInner aside {
+    width: calc((100% - 20px) / 3);
+    margin: 0;
+  }
+}
+
+section#priceTable .priceInner aside span {
+  width: 100%;
+  height: 240px;
+  display: inline-block;
+  background-color: #d3222a;
+  color: #fdfdfd;
+  border-radius: 5px 5px 0 0;
+}
+
+section#priceTable .priceInner aside span i {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/assets/images/car-icon.jpg");
+  -webkit-box-shadow: 0 2px 6px 0 #B8B8B8;
+  box-shadow: 0 2px 6px 0 #B8B8B8;
+  background-color: #fdfdfd;
+}
+
+section#priceTable .priceInner aside span i.red {
+  border: #d3222a solid 2px;
+}
+
+section#priceTable .priceInner aside span i.green {
+  border: #5db346 solid 2px;
+}
+
+section#priceTable .priceInner aside span i.blue {
+  border: #0e4a7e solid 2px;
+}
+
+section#priceTable .priceInner aside span h3 {
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 20px 0 10px 0;
+}
+
+section#priceTable .priceInner aside span h4 {
+  font-size: 60px;
+  font-weight: 300;
+  margin: 60px 0 25px 0;
+}
+
+section#priceTable .priceInner aside span h4 small {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+section#priceTable .priceInner aside span .line {
+  width: 50%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+}
+
+section#priceTable .priceInner aside span.red {
+  background-color: #d3222a;
+}
+
+section#priceTable .priceInner aside span.green {
+  background-color: #5db346;
+  border-color: #5db346;
+}
+
+section#priceTable .priceInner aside span.blue {
+  background-color: #0e4a7e;
+  border-color: #0e4a7e;
+}
+
+section#priceTable .priceInner aside ul {
+  padding: 20px 40px;
+}
+
+section#priceTable .priceInner aside ul li {
+  list-style: none;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #58595b;
+  text-align: left;
+}
+
+section#priceTable .priceInner aside ul li i {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/assets/icons/check-mark.svg");
+}
+
+section#priceTable .priceInner aside a.btn {
+  margin: 10px 0 40px 0;
+}
+
+section#priceTable .priceInner aside:nth-child(2) {
+  -webkit-transform: none;
+          transform: none;
+}
+
+@media (min-width: 769px) {
+  section#priceTable .priceInner aside:nth-child(2) {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+section#priceTable .priceInner aside:nth-child(2) a.btn:hover {
+  background-color: #5db346;
+  border-color: #5db346;
+}
+
+section#priceTable .priceInner aside:last-child a.btn:hover {
+  background-color: #0e4a7e;
+  border-color: #0e4a7e;
+}
+/*# sourceMappingURL=home-pg.component.css.map */

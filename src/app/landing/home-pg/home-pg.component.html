@@ -1,0 +1,199 @@
+<app-header></app-header>
+<Section id="banner">
+    <div class="overlay">
+        <div class="container">
+            <aside>
+                <h1>United Racing Data</h1>
+                <p>Drive | Analyze | Improve</p>
+            </aside>
+        </div>
+    </div>
+</Section>
+<section id="racingData">
+    <div class="container">
+        <span></span>
+        <aside>
+            <h2>United Racing Data</h2>
+            <p>"Learn from pro, learn from everyone. With unitedracingdata.com you can compare you times/telemetry/setup not just to 1-2 drivers, but to thansands of other driver faster then you and find the right way to improve for you!"</p>
+        </aside>
+    </div>
+</section>
+<section id="features">
+    <div class="container">
+        <h2>Main Features</h2>
+        <div class="featureItems">
+            <aside>
+                <i class="helmet"></i>
+                <p>Automatic recording of all telemetry data from the world's leading sims</p>
+            </aside>
+            <aside>
+                <i class="timer"></i>
+                <p>Compare your data with thousands of other drivers laps.</p>
+            </aside>
+            <aside>
+                <i class="racingCar"></i>
+                <p>Automatic recording of your best laps video and compare it, side by side, to other drivers lap videos</p>
+            </aside>
+            <aside>
+                <i class="helmet"></i>
+                <p>Automatic record of setup data and files (for supported sims)</p>
+            </aside>
+            <aside>
+                <i class="timer"></i>
+                <p>Automatic recording of session data (temperatures, track usages, etc) and compare it  to other laps</p>
+            </aside>
+            <aside>
+                <i class="racingCar"></i>
+                <p>World record system - see the best laps on each sim/car/track</p>
+            </aside>
+        </div>
+    </div>
+</section>
+<section id="recordTable">
+    <div class="overlay">
+        <div class="container">
+            <div class="rdTable">
+                <h2>Record Table</h2>
+                <section class="hScroll">
+                    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                        <ng-container matColumnDef="driverName">
+                            <th mat-header-cell *matHeaderCellDef> Driver Name </th>
+                            <td mat-cell *matCellDef="let element"> {{element.driverName}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="track">
+                            <th mat-header-cell *matHeaderCellDef> Track </th>
+                            <td mat-cell *matCellDef="let element"> {{element.track}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="car">
+                        <th mat-header-cell *matHeaderCellDef> Car </th>
+                        <td mat-cell *matCellDef="let element"> {{element.car}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="lapTime">
+                        <th mat-header-cell *matHeaderCellDef> Lap Time </th>
+                        <td mat-cell *matCellDef="let element"> {{element.lapTime}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="longAgo">
+                        <th mat-header-cell *matHeaderCellDef> How Long Ago </th>
+                        <td mat-cell *matCellDef="let element"> {{element.longAgo}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="record">
+                        <th mat-header-cell *matHeaderCellDef> Record </th>
+                        <td mat-cell *matCellDef="let element"> {{element.record}} </td>
+                        </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </section>
+            </div>
+            <div class="topDriver">
+                <h2>Top Drivers</h2>
+                <section class="hScroll">
+                    <table mat-table [dataSource]="dataSource1" class="mat-elevation-z8" id="rankTable">
+                        <ng-container matColumnDef="rank">
+                            <th mat-header-cell *matHeaderCellDef> Rank </th>
+                            <td mat-cell *matCellDef="let element"> {{element.rank}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="name">
+                            <th mat-header-cell *matHeaderCellDef> Name </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                            </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="games">
+    <!-- <div class="redOverlay"> -->
+        <div class="container">
+            <div class="gamesInner">
+                <aside>
+                    <h2>Supported Games</h2>
+                    <div class="gamesList">
+                        <ul>
+                            <li>Currently -</li>
+                            <li><i class="helmet"></i><p>iRacing</p></li>
+                            <li><i class="racingCar"></i><p>Assetto Corsa</p></li>
+                            <li><i class="timer"></i><p>Assetto Corsa Compitune</p></li>
+                        </ul>
+                        <ul>
+                            <li>Coming soon -</li>
+                            <li><i class="helmet"></i><p>Automobilista</p></li>
+                            <li><i class="racingCar"></i><p>rFactor 1</p></li>
+                            <li><i class="timer"></i><p>rFactor 2</p></li>
+                        </ul>
+                    </div>
+                </aside>
+                <span></span> 
+            </div>
+        </div>
+    <!-- </div> -->
+    
+</section>
+<section id="data">
+    <div class="container">
+        <h2>Sell You Data</h2>
+        <p>Section will include this text: “Think you are a pro? UnitedRacingData.com marketplace allows you to sell you data - telemetry data and setup data.” and link to the marketplace page for more information</p>
+        <a href="" class="btn">Contact Now</a>
+    </div>
+</section>
+<section id="priceTable">
+    <div class="container">
+        <h2>Our Packages</h2>
+        <div class="priceInner">
+            <aside>
+                <span class="red">
+                    <h3>Public</h3>
+                    <div class="line"></div>
+                    <h4><small>$</small>70<small>/yr</small></h4>
+                    <i class="red"></i>
+                </span>
+                <ul>
+                    <li> <i></i> Everything in Free Package</li>
+                    <li> <i></i> Access to all fastest laps</li>
+                    <li> <i></i> Access to public setup data</li>
+                    <li> <i></i> Up to 2 mates(*)</li>
+                    <li> <i></i> 1 hour live telemetry/month</li>
+                </ul>
+                <a href="" class="btn">Login</a>
+            </aside>
+            <aside>
+                <span class="green">
+                    <h3>Private</h3>
+                    <div class="line"></div>
+                    <h4><small>$</small>89<small>/yr</small></h4>
+                    <i class="green"></i>
+                </span>
+                <ul>
+                    <li> <i></i> Everything in Public Package</li>
+                    <li> <i></i> Private recording mode(*)</li>
+                    <li> <i></i> Create private packs(*)</li>
+                    <li> <i></i> Up to 5 mates</li>
+                    <li> <i></i> 2.5 hour live telemetry/month</li>
+                </ul>
+                <a href="" class="btn">Contact Us</a>
+            </aside>
+            <aside>
+                <span class="blue">
+                    <h3>Engineer/Instructor</h3>
+                    <div class="line"></div>
+                    <h4><small>$</small>99<small>/yr</small></h4>
+                    <i class="blue"></i>
+                </span>
+                <ul>
+                    <li> <i></i> Everything in Private Package</li>
+                    <li> <i></i> Up to 20 mates(*)</li>
+                    <li> <i></i> 5 hour live telemetry/month</li>
+                </ul>
+                <a href="" class="btn">Contact Us</a>
+            </aside>
+        </div>
+    </div>
+</section>
+
+
+
+
+<app-footer></app-footer>

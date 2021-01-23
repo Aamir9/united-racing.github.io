@@ -1,0 +1,18 @@
+@import '../../../assets/scss/lib.scss';
+#cdk-overlay-0, .cdk-overlay-pane{
+    max-width: 80vw !important;
+    
+}
+
+  
+#close{
+    float: right;
+    cursor: pointer;
+    font-size: 0.934rem;
+}
+
+#main{
+    width: 37vw;
+    height: 20vh;
+
+}

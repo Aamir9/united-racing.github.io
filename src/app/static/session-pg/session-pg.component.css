@@ -1,0 +1,35 @@
+section#session {
+  padding: 120px 0 80px 0;
+}
+
+section#session h2 {
+  color: #fdfdfd;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #2e2e2e;
+}
+
+@media (min-width: 993px) {
+  section#session h2 {
+    font-size: 40px;
+  }
+}
+
+section#session aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section#session aside p {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+@media (min-width: 577px) {
+  section#session aside p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=session-pg.component.css.map */

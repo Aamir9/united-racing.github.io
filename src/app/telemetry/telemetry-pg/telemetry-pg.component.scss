@@ -1,0 +1,202 @@
+@import '../../../assets/scss/lib.scss';
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+   
+    
+
+}
+
+.stickySideBar {
+    position: fixed !important;
+    top: 16% !important;
+    left: 77.8vw;
+
+}
+
+.stickyTopSec{
+    position: fixed;
+    top: 2.3rem;
+    width: 100%;
+    color: white;
+    padding-bottom: 0 !important;
+}
+section#top {
+    width: 100%;
+    .topHeading{
+        background:#2e2e2e;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        z-index: 1000;
+
+     .container{
+        
+        width: auto;
+        padding-top: 0.8em;
+        padding-bottom: 0.5em;
+        margin: 0 1em;
+        
+         div{
+         
+            font-family: "Source Sans Pro", sans-serif;
+            color: $white;
+            font-size: 0.9rem;
+            strong{
+                display:inline-block;
+                width: 60px;
+                text-align: center;
+                border-radius: 0.2em
+            }
+         }
+     }
+    }   
+}
+
+ section#topSec {
+     
+    .topHeading {
+        background-color: #d7d7d7;
+        padding: 0.3em 0;
+        .container {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 14px;
+                margin: 0 10px;
+                @include md {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .topInner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+        @include md {
+            flex-flow: row wrap;
+        }
+        @include lg {
+            flex-flow: row nowrap;
+        }
+       
+    }
+}   
+
+section#menuIcon{
+.menu{
+    background-image: url(/assets/icons/menu.svg);
+    width: 32px;
+    height: 25px;
+    border-radius: 4px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin:0 0.5em;
+    cursor: pointer;
+    background-color:$transparentBlack;
+ } 
+}
+section#bottomSec {
+    
+    z-index: 1000;
+    .bottomHeading {
+        background-color: $transparentBlack;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        
+          .container {
+            width: auto;
+            margin: 0;
+            padding-top: 0.4rem;
+            #lapMenu {
+                padding: 0 0.5rem;
+                cursor: pointer;
+            }
+            .innerFlex{
+              display: flex;
+              flex-direction: row;
+              padding: 0 0.4rem;
+              div{
+                  padding: 0 0.2em;
+                  strong{
+                    display: inline-block;
+                    text-align: center;
+                }
+                  
+              }
+            }
+            .flag {
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-image: url('/assets/icons/united-kingdom.svg');
+                
+            }
+
+         i{
+           cursor: pointer;
+         }  
+         
+         .chart{
+
+            background-image: url(/assets/icons/addchart-white.svg);
+            width: 15px;
+            height: 16px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin:0 0.5em;
+            margin-left: 1em;
+            cursor: pointer;
+         }  
+  }
+    
+    }
+   
+ 
+}
+
+
+section#graphSec{
+    display: flex;
+    background-color: $white;
+    justify-content: left;
+    margin-bottom: 1rem;
+    .graphArea{
+        width: 77vw;
+        margin: 0.5rem;
+        
+    }
+      .sideBar{
+         width: 20vw;
+         margin-right: 1.5rem;
+         justify-content: center;
+        mat-card{
+            
+           
+            margin-top: 1.4rem;
+            -webkit-box-shadow: 0 2px 12px 0 #666666;
+            box-shadow: 0 2px 12px 0 #666666;
+        }
+    }
+  
+}
+
+
+
+
+
+
+
+
+   

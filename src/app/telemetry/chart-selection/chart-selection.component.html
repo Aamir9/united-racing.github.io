@@ -1,0 +1,122 @@
+
+ <i mat-dialog-close  id="close" class="material-icons color2">clear</i>
+ 
+ <div mat-dialog-content class="row">
+
+     <div class="col-10">
+ 
+         <h2 class="h2">Basic</h2>
+         <section>
+             <div mat-dialog-actions>
+                 <button mat-raised-button  class="bgColor5" (click)="addOrRemove($event)" > Throttle</button>
+                 <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Brake</button>
+                 <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Clutch</button>
+                 <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Streering</button>
+                 <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Gear</button>
+                 <button mat-raised-button class="bgColor5"(click)="addOrRemove($event)">Time Diff</button>
+                 <button mat-raised-button class="bgColor5"(click)="addOrRemove($event)">Speed</button>
+                 <button mat-raised-button class="bgColor5"(click)="addOrRemove($event)">RPM</button>
+             </div>
+
+             <div>
+                 <h2 class="h2">Position</h2>
+                 <div mat-dialog-actions>
+                     <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">YAW</button>
+                     <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Pitch</button>
+                     <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Roll</button>
+                     <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Ride Height</button>
+
+                 </div>
+             </div>
+
+             <div>
+                 <div>
+                     <h2 class="h2">Type</h2>
+                     <div mat-dialog-actions>
+                         <button mat-raised-button class="bgColor5"(click)="addOrRemove($event)">RF Tyre Temps</button>
+                         <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">LF Tyre Temps</button>
+                         <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">RR Tyre Temps</button>
+                         <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">LR Tyre Temps</button>
+                         <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Wheels Speed</button>
+                         <button mat-raised-button class="bgColor5" (click)="addOrRemove($event)">Tyres Pressure</button>
+
+
+                     </div>
+                 </div>
+             </div>
+
+             <div>
+                 <h2 class="h2">Profile</h2>
+                 <div mat-dialog-actions>                   
+                     <form class="example-form">
+                         <table class="example-full-width" cellspacing="0">
+                             <tr>
+                                 <td>
+                                     <mat-form-field >
+                                          <mat-label>Profile</mat-label>
+                                         <mat-select>
+                                             <mat-option value="profile1" >Profile 1</mat-option>
+                                             <mat-option value="profile2">Profile 2</mat-option>
+                                         </mat-select>
+                                        
+                                     </mat-form-field>
+                                        
+                                            
+                                 </td>                        
+                     
+                             </tr>
+                         </table>
+                     </form>
+                     <mat-checkbox  [checked]="true">Default</mat-checkbox>
+                                       
+                     <button mat-raised-button class="bgColor1 color5">Save Profile</button>
+                     <button mat-raised-button class="bgColor1 color5" >Delete Profile</button>
+                 </div>
+             </div>
+
+
+             <div>
+               
+                 <div mat-dialog-actions>
+                     <form class="example-form">
+                         <table class="example-full-width" cellspacing="0">
+                             <tr>
+                                 <td>
+                                     <mat-form-field class="example-full-width">
+                                          <mat-label>Create New Profile</mat-label> 
+                                         <input matInput placeholder="Profile">
+                                     </mat-form-field>
+                                 </td>                        
+                     
+                             </tr>
+                         </table>
+                     </form>
+                   
+                     <button mat-raised-button class="bgColor1 color5">Create New</button>
+                  </div>
+             </div>
+
+             <div>
+                 <button  mat-dialog-close mat-raised-button class="bgColor1 color5" style="margin-right: 0.4rem;">Cancel</button>
+                 <button mat-raised-button class="bgColor1 color5" (click)="acceptChanges()">Accept Changes</button>
+             </div>
+
+
+         </section>
+     </div>
+     <div class="col-2">
+         <h2>Selected</h2>
+         <span>Drag to record</span>
+          <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+             <div class="example-box" *ngFor="let list of ItemList" cdkDrag>
+               {{list}}
+              
+             </div>
+           </div> 
+
+     </div>
+ 
+ </div>
+
+
+

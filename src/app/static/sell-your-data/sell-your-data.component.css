@@ -1,0 +1,176 @@
+section#sellData h2,
+section#contactUs h2 {
+  text-align: center;
+  color: #2e2e2e;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 577px) {
+  section#sellData h2,
+  section#contactUs h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+section#sellData {
+  padding: 120px 0 40px 0;
+}
+
+section#sellData .sellInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+section#sellData .sellInner aside {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8px 0;
+}
+
+@media (min-width: 577px) {
+  section#sellData .sellInner aside {
+    width: calc((100% - 40px) / 2);
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 993px) {
+  section#sellData .sellInner aside {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+section#sellData .sellInner aside i {
+  width: 40px;
+  height: 40px;
+  background-color: #d3222a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  display: block;
+}
+
+@media (min-width: 577px) {
+  section#sellData .sellInner aside i {
+    width: 60px;
+    height: 60px;
+    background-size: 40px;
+  }
+}
+
+section#sellData .sellInner aside i.helmet {
+  background-image: url("/assets/icons/helmet.svg");
+}
+
+section#sellData .sellInner aside i.racingCar {
+  background-image: url("/assets/icons/racing-car.svg");
+}
+
+section#sellData .sellInner aside i.timer {
+  background-image: url("/assets/icons/timer.svg");
+}
+
+section#sellData .sellInner aside p {
+  width: calc(100% - 60px);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 577px) {
+  section#sellData .sellInner aside p {
+    width: calc(100% - 80px);
+  }
+}
+
+section#contactUs {
+  padding: 60px 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/car-img-dark.jpg");
+}
+
+section#contactUs h2 {
+  color: #fdfdfd;
+}
+
+section#contactUs form {
+  max-width: 580px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 15px 10px 50px 10px;
+}
+
+@media (min-width: 577px) {
+  section#contactUs form {
+    width: calc(100% - 80px);
+    padding: 20px 40px 60px 40px;
+  }
+}
+
+section#contactUs form .nameArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 769px) {
+  section#contactUs form .nameArea {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#contactUs form .formGrp aside {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  section#contactUs form .formGrp aside {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+section#contactUs form .formGrp aside:first-child {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  section#contactUs form .formGrp aside:first-child {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=sell-your-data.component.css.map */

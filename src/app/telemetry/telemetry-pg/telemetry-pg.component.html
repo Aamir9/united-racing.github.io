@@ -1,0 +1,118 @@
+<app-header></app-header>
+<Section id="top">
+   
+    <div  class="topHeading" id="topHeading">
+            <div class="container">
+                <div> <strong class="bgColor2"> Sim:</strong> iRacing</div>
+           </div>
+
+            <div class="container">
+             <div> <strong class="bgColor2">Track:</strong> Interlagos-Grand Prix</div>
+            </div>
+
+            <div class="container">
+             <div> <strong class="bgColor2">Car:</strong> Porsche 911 GT3 Cup</div>
+            </div>
+           
+    
+     </div>
+</Section>
+<section id="topSec">
+    <div class="topInner">
+        <div *ngFor="let item of lapBoxList">
+            <app-lap-info-box [lap]="item"  (RemoveLapEvent)="RemoveLap($event)"></app-lap-info-box>
+           
+        </div>
+      
+       <app-add-stint-box [lap_1]="lapBoxList"  (newLapEvent)="copyLap($event)" ></app-add-stint-box>
+    </div>
+</section>
+
+<section id="bottomSec">
+    
+       <div  class="bottomHeading"  >
+
+        <div class="container">
+
+            <strong class="color5" id="lapMenu" (click)="StintMenu($event)">Switch lap</strong>
+             <i class="material-icons  color5 displayNone" id="lapMenuClear" (click)="StintMenuHide()">clear</i> 
+        </div>
+
+         <div class="container ">
+             <div class="innerFlex ">
+                <i class="material-icons  color1" style="cursor: default;">double_arrow</i> 
+                <div >
+                    
+                    <strong>Lap 1:</strong>1:36.478 
+                 </div> 
+                 <div> 
+                     
+                    <img src="assets/icons/united-kingdom.svg" class="flag" alt="flag"> 
+                 </div>
+                  <div> Amir Meshulam</div>
+             </div>
+            
+         </div>
+
+         <div class="container ">
+            <div class="innerFlex ">
+                <i class="material-icons    color2" style="cursor: default;">double_arrow</i> 
+            <div>
+               <strong>Lap 12:</strong>1:36.478 
+            </div> 
+            <div>
+               <img src="assets/icons/united-kingdom.svg" class="flag" alt="flag"> 
+            </div>
+               <div> Amir Meshulam</div>
+        </div>
+         </div>
+        <div class="container ">
+            <div class="innerFlex ">
+                <i class="material-icons  color3" style="cursor: default;">double_arrow</i> 
+            <div >
+               <strong>Lap 123:</strong>1:36.478 
+            </div> 
+            <div>
+               <img src="assets/icons/united-kingdom.svg" class="flag" alt="flag"> 
+            </div>
+               <div> Amir Meshulam</div>
+        </div>
+        </div>
+
+        
+        <div class="container" style="margin-left: auto;margin-right: 1rem;">
+          
+            <i class="material-icons  color5" id="lapChart" (click)="openChartDialog()"> addchart</i>
+        </div>
+       </div>
+
+       <app-lap-selection  ></app-lap-selection>
+        <app-sectors-bar></app-sectors-bar>
+
+
+</section>
+
+<section id="graphSec">
+        <div class="graphArea" >
+           
+            
+            <!-- <app-telelemtry-chart [chartsName]="selectedCharts"></app-telelemtry-chart> -->
+            <app-telelemtry-charts></app-telelemtry-charts>
+               
+        </div>
+        <div class="sideBar" id="sideBar">
+            <mat-card>
+                <app-lap-compare-box></app-lap-compare-box>
+            </mat-card>
+
+            <mat-card>
+                <app-track-map></app-track-map>  
+            </mat-card>
+           
+   
+        </div>
+
+</section>
+   
+<app-footer></app-footer>
+

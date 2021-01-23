@@ -1,0 +1,58 @@
+@import '../../../assets/scss/lib.scss';
+
+            .mat-list {
+               
+                .mat-list-item {
+                  height: auto;
+                  border-bottom: dashed 1px #ccc;
+                  display: flex;
+                  justify-content: space-between;
+                  flex-flow: column nowrap;
+                  
+                    p, h3 {
+                        margin-bottom: 0;
+                       
+                    }
+                    
+                    p {
+                        font-size: 0.895rem;
+                    }
+                    span{
+                        font-size: 0.9rem;
+                          font-weight: 800;
+                    }
+
+                    .lapColor1{
+                        color: $blue;
+                       }
+                       .lapColor2{
+                           color: $red;
+                          }
+                       .lapColor3{
+                           color: $orange;
+                          } 
+                  
+                }
+                .mat-list-item:first-child{
+                    border-bottom: none;
+                }
+                .mat-list-item.lap1heading,
+                .mat-list-item.lap2heading,
+                .mat-list-item.lap3heading{
+                    background-color: $blue;
+                    color: $white;
+                    height: auto !important;
+                    border-radius: 2px;
+                    p {
+                        padding:0.1em 0px;
+                    }
+                } 
+                .mat-list-item.lap2heading {
+                    background-color: $red;
+                }
+        
+                .mat-list-item.lap3heading {
+                    background-color: $orange;
+                }
+
+            }

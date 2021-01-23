@@ -1,0 +1,67 @@
+@import '../../../assets/scss/lib.scss';
+mat-icon{
+    cursor: pointer;
+    } 
+.mat-dialog-content {
+    overflow-y: hidden !important;
+}
+section#tabs{
+ mat-card{
+    margin: 2.5rem;
+.mat-tab-label {
+    background-color: $white;
+    color: $black;
+    font-weight: 700;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+    color: $red;
+    font-weight: 700;
+    
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+    background-color:$red;
+     color:$red;
+}
+
+aside{
+    margin: 0.5rem 2rem 1rem;
+    
+    .content{
+         width: 300px;
+    }
+    .dropdown{
+        margin-left: 0.2rem;
+    }
+    table.mat-table{
+        min-width: unset !important;
+      
+    }
+    .checkbox{
+        padding-bottom:1rem;
+    }
+
+    mat-list-option[aria-selected="true"], mat-list-option:hover  {
+        background: $black !important;
+        color: $white !important;
+      }
+
+      mat-selection-list {
+        mat-list-option{
+            .listItem{
+                display: flex;
+               .text{
+                margin: auto 0;
+                }
+            }
+        }
+      }
+    
+}
+    
+}
+
+}

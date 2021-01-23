@@ -1,0 +1,36 @@
+section#third .sectionBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.3em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+section#third .sectionBar .tab {
+  margin: 0 0.1em;
+  margin-bottom: 0.2em;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+section#third .sectionBar .blue {
+  background-color: #0e4a7e;
+  color: white;
+}
+
+section#third .sectionBar .red {
+  background-color: #d3222a;
+  color: white;
+}
+/*# sourceMappingURL=sectors-bar.component.css.map */

@@ -1,0 +1,21 @@
+<mat-card >
+    <mat-list role="list">
+        <mat-list-item role="listitem" class="lap1heading" ><p>ADD STINT TO COMPARE</p></mat-list-item>
+        <mat-list-item role="listitem">
+            <button mat-button color="primary" (click)="openSintDialog()" >ADD NEW STINT</button>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+            <button mat-button color="primary"   (click)="copyfirstSint()">DUPLICATE STINT 1 </button>
+        </mat-list-item>
+        <mat-list-item role="listitem" class="displayNone" id="dublicateSint">
+            <button mat-button color="primary"  (click)="copydoubledSint()">DUPLICATE STINT 2</button>
+        </mat-list-item> 
+
+      
+        
+        <mat-list-item role="listitem">
+            <button mat-button color="primary" (click)="openShareLinkDialog()">  SHARE</button>
+        </mat-list-item> 
+    </mat-list>
+
+</mat-card>

@@ -1,0 +1,40 @@
+<i mat-dialog-close  id="close" class="material-icons color2">clear</i>
+ 
+<div  mat-dialog-title>
+Share this telemetry
+</div>
+<div mat-dialog-content id="main">
+<p>
+    You can copy/paste  this link to give access to this page to people not registered to this 
+    website 
+</p>
+<div>
+    <form action="">
+
+    <mat-checkbox  [checked]="true">Default</mat-checkbox> 
+    <span>  Limit to currently  displayed charts</span>
+
+    <div class="row">
+       
+        <div class="col-3">
+            <mat-form-field class="example-full-width">
+                <mat-label>Link</mat-label>
+                <input matInput placeholder="link copy/past"  disabled [value]="linkUrl">
+              </mat-form-field>
+        </div>
+        
+     <div>
+        <button mat-raised-button  (click)="generateLink($event)">{{btnText}}</button>
+     </div>
+         
+    
+    </div>
+    
+
+      
+    </form>
+</div>
+
+  
+  
+</div>

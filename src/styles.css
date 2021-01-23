@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline: 0;
+}
+
+h1, h2 {
+  font-family: 'Exo', sans-serif !important;
+}
+
+.container {
+  max-width: 1170px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  color: #58595b;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 35px;
+  border: #58595b solid 1px;
+  border-radius: 50px;
+  background-color: transparent;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+a.btn:hover {
+  background-color: #d3222a;
+  border-color: #d3222a;
+  color: #fdfdfd;
+}
+
+section.hScroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table.mat-table {
+  width: 100%;
+  min-width: 1100px;
+  border-radius: 10px;
+  background-color: #2e2e2e77;
+}
+
+table.mat-table thead th, table.mat-table tbody td {
+  background-color: transparent;
+  color: #fdfdfd;
+  text-indent: 20px;
+  padding: 10px;
+  border-bottom: rgba(255, 255, 255, 0.4) solid 1px;
+  color: #fdfdfd;
+}
+
+table.mat-table thead th {
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+@media (min-width: 993px) {
+  table.mat-table thead th {
+    font-size: 16px !important;
+  }
+}
+
+table.mat-table tbody td {
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+@media (min-width: 993px) {
+  table.mat-table tbody td {
+    font-size: 16px !important;
+  }
+}
+
+table.mat-table tbody td a, table.mat-table tbody td i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #5db346;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+table.mat-table tbody td a.telemetry {
+  background-image: url("/assets/icons/graph.svg");
+}
+
+table.mat-table tbody td a.steps {
+  background-image: url("/assets/icons/settings.svg");
+}
+
+table.mat-table tbody td a.video {
+  background-image: url("/assets/icons/video.svg");
+}
+
+table.mat-table tbody td i.icon1, table.mat-table tbody td i.icon2, table.mat-table tbody td i.icon3 {
+  background-image: url("/assets/images/iRacing-Logo.png");
+  width: 30px;
+  height: 30px;
+}
+
+table.mat-table tbody td i.icon2 {
+  background-image: url("/assets/images/assetto.jpg");
+}
+
+table.mat-table tbody td i.icon3 {
+  background-image: url("/assets/images/competizione.jpg");
+  background-size: cover;
+}
+
+table.mat-table tbody td i.trackPosition1,
+table.mat-table tbody td i.trackPosition2 {
+  background-image: url("/assets/images/track-img-1.png");
+  width: 70px;
+  height: 45px;
+}
+
+table.mat-table tbody td i.trackPosition2 {
+  background-image: url("/assets/images/track-img-2.png");
+}
+
+table.mat-table tbody td i.marks {
+  background-image: url("/assets/icons/thunder-white.svg");
+}
+
+table.mat-table tbody td i.snow {
+  background-image: url("/assets/icons/snow-white.svg");
+}
+
+table.mat-table tbody tr:nth-child(even) td {
+  background-color: #44434352;
+}
+
+table.mat-table tbody tr:nth-child(odd) td {
+  background-color: #2e2e2e83;
+}
+
+table.sessionTable thead th {
+  font-size: 11px !important;
+}
+
+table.sessionTable tbody td {
+  font-size: 14px !important;
+}
+
+table#rankTable {
+  width: 100%;
+  min-width: 100%;
+}
+
+@media (min-width: 993px) {
+  table#rankTable {
+    min-width: 400px !important;
+  }
+}
+
+.formGrp {
+  margin: 25px 0;
+}
+
+.formGrp h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align-last: left;
+  color: #2e2e2e;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+  width: calc(100% - 30px);
+  padding: 10px 15px;
+  border: #58595b solid 1px;
+  background-color: #58595b8e;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fdfdfd;
+}
+
+select {
+  background-color: #fdfdfd;
+  color: #2e2e2e;
+}
+
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #fdfdfd;
+}
+
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #fdfdfd;
+}
+
+input[type=text]::-ms-input-placeholder,
+input[type=email]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #fdfdfd;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+  color: #fdfdfd;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border: #0e4a7e solid 1px;
+  -webkit-box-shadow: 0 2px 8px 0 #2e2e2ebe;
+  box-shadow: 0 2px 8px 0 #2e2e2ebe;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button[type=submit] {
+  color: #58595b;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 35px;
+  border: #58595b solid 1px;
+  border-radius: 50px;
+  outline: 0;
+  margin-top: 20px;
+  background-color: #fdfdfd;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+button[type=submit]:hover {
+  background-color: #d3222a;
+  color: #fdfdfd;
+  border-color: #d3222a;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  padding: 0  5px !important;
+}
+
+button.menuBtn {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-option .mat-option-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mat-dialog-container {
+  background: #fdfdfd !important;
+  -webkit-box-shadow: 0 2px 12px 0 #666666 !important;
+  box-shadow: 0 2px 12px 0 #666666 !important;
+}
+
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+  background-color: #0e4a7e !important;
+  color: #0e4a7e !important;
+}
+
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+  color: #0e4a7e;
+}
+
+.color1 {
+  color: #0e4a7e;
+  fill: #0e4a7e;
+}
+
+.color2 {
+  color: #d3222a;
+  fill: #d3222a;
+}
+
+.color3 {
+  color: #ce6300;
+  fill: #ce6300;
+}
+
+.color4 {
+  color: #5db346;
+  fill: #5db346;
+}
+
+.color5 {
+  color: #fdfdfd;
+  fill: #fdfdfd;
+}
+
+.bgColor1 {
+  background-color: #0e4a7e;
+}
+
+.bgColor2 {
+  background-color: #d3222a;
+}
+
+.bgColor3 {
+  background-color: #ce6300;
+}
+
+.bgColor3 {
+  background-color: #ce6300;
+}
+
+.bgColor4 {
+  background-color: #5db346;
+}
+
+.bgColor5 {
+  background-color: #fdfdfd;
+}
+
+.bgTransparentColor1 {
+  background-color: rgba(0, 0, 255, 0.465);
+}
+
+.bgTransparentColor2 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.bgTransparentColor3 {
+  background-color: #ce6400af;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.displayHidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=styles.css.map */

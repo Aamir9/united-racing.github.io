@@ -1,0 +1,48 @@
+section#track {
+  padding: 120px 0 80px 0;
+}
+
+section#track h2 {
+  color: #fdfdfd;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #2e2e2e;
+}
+
+@media (min-width: 993px) {
+  section#track h2 {
+    font-size: 40px;
+  }
+}
+
+section#track .formGrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 577px) {
+  section#track .formGrp {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+}
+
+section#track .formGrp aside {
+  width: 100%;
+  margin-right: 20px;
+}
+
+@media (min-width: 577px) {
+  section#track .formGrp aside {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=track-pg.component.css.map */

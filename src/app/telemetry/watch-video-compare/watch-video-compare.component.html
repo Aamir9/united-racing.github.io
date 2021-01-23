@@ -1,0 +1,31 @@
+<i mat-dialog-close  id="close" class="material-icons color2">clear</i>
+ 
+
+<div mat-dialog-content id="main">
+  <div class="row">
+    
+    <div class="col-2" id="col_1">
+      <video  id="video-player"  data-setup="{}" controls=""  class="video-js vjs-default-skin "   preload="auto"></video>
+    </div>
+
+     <div class="col-2" id="col_2">
+      <video  id="video-player_2"  data-setup="{}" controls=""  class="video-js vjs-default-skin"   preload="auto"></video>
+    </div> 
+    
+   
+  </div>
+
+ <div class="bottomBtnGroup" id="bottomBtnGroup">
+    <button mat-raised-button color="primary" (click)="playBoth()">  <i class="material-icons" >play_arrow</i> PLAY BOTH</button>
+    <button mat-raised-button  color="primary" (click)="pauseBoth()" > <i class="material-icons" >pause</i> PAUSE  BOTH</button>
+    <button mat-raised-button  color="primary"  (click)="stopBoth()" > <i class="material-icons" >stop</i> STOP BOTH</button>
+    <button mat-raised-button  color="primary"  (click)="mutedOrNotMuted()" *ngIf="isMuted" > <i class="material-icons" >volume_off</i> UNMUTE</button>
+    <button mat-raised-button  color="primary"  (click)="mutedOrNotMuted()" *ngIf="!isMuted" > <i class="material-icons" >volume_up</i> MUTE</button>
+     
+  </div> 
+   
+    
+</div>
+
+
+

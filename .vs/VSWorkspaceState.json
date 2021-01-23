@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\shared\\header",
+    "\\src\\app\\static",
+    "\\src\\app\\static\\session-pg",
+    "\\src\\app\\static\\track-pg"
+  ],
+  "SelectedNode": "\\src\\app\\static\\track-pg\\track-pg.component.scss",
+  "PreviewInSolutionExplorer": false
+}

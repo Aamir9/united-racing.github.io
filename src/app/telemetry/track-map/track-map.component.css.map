@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "track-map.component.scss"
+    ],
+    "names": [],
+    "file": "track-map.component.css"
+}

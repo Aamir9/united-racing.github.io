@@ -1,0 +1,367 @@
+@import './assets/scss/lib.scss';
+* {
+    margin: 0;
+    padding: 0;
+    // font-family: 'Handlee', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    // font-family: 'Varela Round', sans-serif;
+    // font-family: 'Exo', sans-serif;
+    outline: 0;
+}
+h1, h2 {
+    font-family: 'Exo', sans-serif !important;
+}
+.container {
+    max-width: 1170px;
+    width: 96%;
+    margin: 0 auto;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: $gray;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 35px;
+    border: $gray solid 1px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.2s all linear;
+}
+a.btn:hover {
+    background-color: $red;
+    border-color: $red;
+    color: $white;
+}
+
+section.hScroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table.mat-table {
+    width: 100%;
+    min-width: 1100px;
+    border-radius: 10px;
+    background-color: #2e2e2e77;
+    thead th, tbody td {
+        background-color: transparent;
+        color: $white;
+        text-indent: 20px;
+        padding: 10px;
+        border-bottom: rgba(255, 255, 255, 0.4) solid 1px;
+        color: $white;
+    }
+    thead th {
+        font-size: 14px !important;
+        font-weight: bold !important;
+        @include lg {
+            font-size: 16px !important;
+        }
+    }
+    tbody td {
+        font-size: 14px !important;
+        font-weight: 400;
+        @include lg {
+            font-size: 16px !important;
+        }
+        a, i {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-right: 20px;
+            font-size: 16px;
+            color: $green;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a.telemetry {
+            background-image: url('/assets/icons/graph.svg');
+        }
+        a.steps {
+            background-image: url('/assets/icons/settings.svg');
+        }
+        a.video {
+            background-image: url('/assets/icons/video.svg');
+        }
+        i.icon1, i.icon2, i.icon3  {
+            background-image: url('/assets/images/iRacing-Logo.png');
+            width: 30px;
+            height: 30px;
+        }
+        i.icon2 {
+            background-image: url('/assets/images/assetto.jpg');
+        }
+        i.icon3 {
+            background-image: url('/assets/images/competizione.jpg');
+            background-size: cover;
+        }
+        i.trackPosition1,
+        i.trackPosition2 {
+            background-image: url('/assets/images/track-img-1.png');
+            width: 70px;
+            height: 45px;
+        }
+        i.trackPosition2 {
+            background-image: url('/assets/images/track-img-2.png');
+        }
+        i.marks {
+            background-image: url('/assets/icons/thunder-white.svg');
+        }
+        i.snow {
+            background-image: url('/assets/icons/snow-white.svg');
+        }
+        
+    }
+    tbody tr:nth-child(even) td {
+        background-color: #44434352;
+    }
+    tbody tr:nth-child(odd) td {
+        background-color: #2e2e2e83;
+    }
+}
+
+table.sessionTable {
+    thead {
+        th {
+            font-size: 11px !important;
+        }
+    }
+    tbody {
+        td {
+            font-size: 14px !important;
+        }
+    }
+}
+table#rankTable {
+    width: 100%;
+    min-width: 100%;
+    @include lg {
+        min-width: 400px !important;
+    }
+}
+.formGrp {
+    margin: 25px 0;
+    h3 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align-last: left;
+        color: $black;
+    }
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    border: $gray solid 1px;
+    background-color: #58595b8e;
+    border-radius: 3px;
+    font-size: 16px;
+    color: $white;
+}
+
+select {
+    background-color: $white;
+    color: $black;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder  {
+    color: $white;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    border: $blue solid 1px;
+    -webkit-box-shadow: 0 2px 8px 0 #2e2e2ebe;
+    box-shadow: 0 2px 8px 0 #2e2e2ebe;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button[type=submit] {
+    color: $gray;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 35px;
+    border: $gray solid 1px;
+    border-radius: 50px;
+    outline: 0;
+    margin-top: 20px;
+    background-color: $white;
+    transition: 0.2s all linear;
+}
+
+button[type=submit]:hover {
+    background-color: $red;
+    color: $white;
+    border-color: $red;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    justify-content: space-between !important;
+    padding: 0  5px !important;
+}
+
+button.menuBtn {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-option {
+    .mat-option-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.mat-dialog-container{
+
+    background: $white !important;
+    -webkit-box-shadow: 0 2px 12px 0 #666666 !important;
+            box-shadow: 0 2px 12px 0 #666666 !important;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// chnage pop color theming
+
+
+//  dialog model themeing colors
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+    background-color: $blue !important;
+    color: $blue !important
+  }
+  
+  ::ng-deep .mat-form-field-empty.mat-form-field-label {
+      color: $blue;
+  }
+
+ // code for color
+ //  1 ===>  blue
+ //  2 ===>  red
+ //  3 ===>  orange
+ //  4 ===>  green
+ //  5 ===>  white
+
+
+// frontend colors
+  .color1{
+    color: $blue ;
+    fill:$blue;
+    }
+  .color2{
+    color: $red;
+    fill:$red;
+   }
+   .color3{
+    color: $orange;
+    fill:$orange;
+   }
+
+
+  .color4{
+    color: $green;
+    fill:$green;
+   }
+  
+    
+   .color5{
+    color: $white;
+    fill:$white;
+    }
+
+    .color6{
+        color: $black;
+        fill:$black;
+        }
+    
+
+
+
+   // background colors
+   .bgColor1{
+       background-color:$blue
+   
+   }
+   .bgColor2{
+       background-color: $red;
+       
+   }
+   
+   .bgColor3{
+       background-color: $orange;  
+   }
+    .bgColor3{
+        background-color: $orange;  
+    }
+    .bgColor4{
+        background-color: $green;  
+    }
+  
+    .bgColor5{
+        background-color: $white;  
+    }
+    .bgColor6{
+        background-color: $black;  
+    }
+  
+
+    // transparent colors
+    .bgTransparentColor1{
+        background-color:$transparentBlue;
+    
+       }
+       .bgTransparentColor2{
+           background-color: $transparentRed;
+           
+       }
+       
+       .bgTransparentColor3{
+           background-color: $transparentorange;  
+       }
+       
+
+    // not display
+   .displayNone{
+       display: none !important;
+   }
+   .displayHidden{
+       visibility: hidden;
+   }
+   
+
+   // tooltip stying
+
+   .tooltip-inner {
+    background-color:  $black !important;
+  
+}
+
+
+// left algin dropdown item
+.mat-option .mat-option-text{
+    justify-content:left !important;
+}
+
+ 

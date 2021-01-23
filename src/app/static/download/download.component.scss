@@ -1,0 +1,88 @@
+@import '../../../assets/scss/lib.scss';
+section#dnPage {
+    padding: 120px 0 80px 0;
+    
+    aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column nowrap;
+        @include lg {
+            flex-flow: row wrap;
+        }
+        .txtCenter {
+            width: 100%;
+            text-align: center;
+            @include lg {
+                width: calc(100% - 500px);
+            }
+            @include xl {
+                width: calc(100% - 560px);
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 400;
+                color: $black;
+                text-align: left;
+                margin-bottom: 0;
+                @include lg {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 14px;
+                color: $black;
+                margin: 10px 0 20px 0;
+                text-align: left;
+                @include sm {
+                    font-size: 16px;
+                    margin: 20px 0 30px 0;
+                }
+                
+            }
+            .btn {
+                background-color: $red;
+                color: $white;
+                border-color: $red;
+                border-radius: 50px;
+                padding: 5px 45px;
+                font-size: 20px;
+                margin-bottom: 40px;
+                transition: 0.2s all linear;
+                @include md {
+                    padding: 10px 55px;
+                }
+                @include lg {
+                    margin-top: 30px;
+                }
+            }
+            
+            .btn:hover {
+                background-color: $green;
+                border-color: $green;
+            }
+        }
+        span {
+            width: 100%;
+            height: 260px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: url('/assets/images/bg-img.jpg');
+            margin-bottom: 20px;
+            @include sm {
+                height: 320px;
+            }
+            @include lg {
+                width: 480px;
+            }
+            @include xl {
+                width: 540px;
+            }
+        }
+    }
+    
+}
+
+    

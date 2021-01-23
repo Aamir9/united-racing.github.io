@@ -1,0 +1,115 @@
+@import '../../../assets/scss/lib.scss';
+$transparent:rgba(0,0,0,0.2);
+$transparentWhite:rgba(255,255, 255, 0.3);
+section#wldRecord {    
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../../../assets/images/table-bg.jpg');
+    background-attachment: fixed;
+  .main{
+        padding: 3rem;
+              .heading{
+                      h2{
+                font-size: 3rem;
+                text-align: center;
+                color:$white;
+                -webkit-text-shadow: 0px 6px 7px $black;  
+                text-shadow: 0px 6px 7px $black;
+            }
+             }
+
+   .group{
+       border: 2.5rem solid $transparentWhite;
+       border-top: 0;
+    form {
+         background: $transparent;
+        .formGrp {
+           background: $transparentWhite;
+            border-bottom: 1px solid $white;
+             display: flex;
+             flex-wrap: wrap;
+            margin: 0;
+             aside {
+                margin: 0 1rem;
+                width: 180px;
+             }
+        }
+
+        ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+            background-color: $gray;
+             color:$white !important; 
+         }
+       
+        ::ng-deep .mat-select-value,
+         ::ng-deep .mat-select-placeholder,
+         ::ng-deep .mat-select-value, ::ng-deep .mat-select-arrow,
+         ::ng-deep  .mat-form-field-appearance-legacy .mat-form-field-label{
+            color:$white !important;  
+            font-weight: bold !important;
+         }
+       
+        
+        ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+             background-color:$white;
+         }
+      
+    }   
+
+    .hScroll{
+        table.mat-table {
+            border-radius: 0; flex: 0 0 10%;
+              background-color:$transparent ;
+                thead th, tbody td { 
+                    //  background-attachment: $transparent;
+                     color:$white !important;
+                      }
+             tr:nth-child(even)  {
+                 td{
+                    background-color:$transparent ;
+                    font-weight: 500;
+                 }
+                
+             }
+            
+             tr:nth-child(odd) {
+                td{
+                   background-color:$black ;
+                   font-weight: 500;
+                }
+               
+            }
+           
+             tr.mat-header-row {
+                  background: $transparentWhite !important; 
+                  height: auto !important; 
+                th{
+                      color:$white;
+                      padding-bottom: 0;
+                      font-size: 0.8rem !important;
+                      
+                  }
+             }
+             .mat-row> .mat-cell{
+                color: $white;
+               
+             }
+            
+              th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type{
+                  padding-left: 0 !important;
+              }
+
+            .mat-row:hover > .mat-cell {
+            background-color: $white !important;
+            color: $black;
+            cursor: pointer;
+              }
+
+           }
+        
+       } 
+}
+}
+
+}

@@ -1,0 +1,36 @@
+@import '../../../assets/scss/lib.scss';
+#cdk-overlay-0, .cdk-overlay-pane{
+    max-width: 100vw !important;
+    
+}
+
+  
+#close{
+    float: right;
+    cursor: pointer;
+    font-size: 0.934rem;
+}
+.displayNone{
+    display: none !important;
+}
+.video-player-dimensions ,.video-player_2-dimensions{
+    width:initial  !important;
+     height: 65vh !important;
+}
+
+
+#main{
+    width: 76.8vw;
+    // height: 55vh;
+    .row{
+        display: flex;
+        justify-content:center;
+         .col{
+            width: 76.8vw;
+
+        }
+        
+    }
+
+
+}

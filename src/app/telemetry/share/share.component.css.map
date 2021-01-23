@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,cAAc,EAAE,iBAAiB,CAAA;EAC7B,SAAS,EAAE,eAAe;CAE7B;;AAGD,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,OAAO;EACf,SAAS,EAAE,QAAQ;CACtB;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAEf",
+    "sources": [
+        "share.component.scss",
+        "../../../assets/scss/lib.scss"
+    ],
+    "names": [],
+    "file": "share.component.css"
+}

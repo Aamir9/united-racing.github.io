@@ -1,0 +1,81 @@
+#cdk-overlay-0, .cdk-overlay-pane {
+  max-width: 80vw !important;
+}
+
+.bg-white {
+  background-color: #fdfdfd;
+  color: #2e2e2e;
+}
+
+.bg-blue {
+  background-color: #0e4a7e !important;
+  color: #fdfdfd;
+}
+
+#close {
+  float: right;
+  cursor: pointer;
+  font-size: 0.934rem;
+}
+
+#main {
+  width: 70vw;
+  height: 32vh;
+}
+
+#main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 70vw;
+}
+
+#main .row .col {
+  width: calc(21.5vw - 100px);
+}
+
+#main .row .col mat-form-field {
+  width: 90% !important;
+}
+
+#main .row_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 2rem;
+}
+
+#main .row_2 .col-2 {
+  width: calc(23.5vw - 100px);
+}
+
+#main .row_2 .col-2 mat-form-field {
+  width: 90% !important;
+}
+
+#main .row_2 .col-4 {
+  width: calc(33.5vw - 100px);
+}
+
+#main .row_2 .col-4 mat-form-field {
+  width: 90% !important;
+}
+/*# sourceMappingURL=session-select.component.css.map */

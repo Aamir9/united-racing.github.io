@@ -1,0 +1,140 @@
+ <app-header></app-header>
+<section id="accountMain">
+
+  <div class="tabArea">
+
+  
+  <mat-tab-group>
+  
+    <!-- persone information -->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="material-icons">person</i>  &nbsp; 
+       Personal Information 
+      </ng-template>
+
+      <aside>
+        <div class="content">
+
+          <div class="innnerContent">
+            
+            <div class="ac">
+              
+              <div class="ng-autocomplete">
+                <label >Country</label>
+                <ng-autocomplete
+                  [data]="countries"
+                  [searchKeyword]="keyword"
+                  placeholder="Enter the Country Name"
+                  (selected)='selectEvent($event)'
+                  (inputChanged)='onChangeSearch($event)'
+                  (inputFocused)='onFocused($event)'
+                  historyIdentifier="countries"
+                  [itemTemplate]="itemTemplate"
+                  [notFoundTemplate]="notFoundTemplate">
+                </ng-autocomplete>
+              
+                <ng-template #itemTemplate let-item>
+                  <div class="item">
+                    <img src="{{imgUrl}}" height="25">
+                    <span [innerHTML]="item.name"></span> 
+                 
+                  </div>
+                </ng-template>
+              
+                <ng-template #notFoundTemplate let-notFound>
+                  <div [innerHTML]="notFound"></div>
+                </ng-template>
+              </div>
+          
+            </div>
+            
+        </div>
+        </div>
+
+      </aside>
+
+
+    </mat-tab>
+
+     <!-- display -->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="material-icons">preview</i> &nbsp; 
+        Display
+      </ng-template>
+     
+          <aside>
+            <div class="content">
+    
+              <div class="innnerContent">
+                <h4>Do you wish to record video of you laps? </h4>
+                 <div class="dd">
+                  <mat-form-field >
+                    <mat-label>Record Lap Videos</mat-label>
+                   <mat-select  formControlName="record"  (selectionChange)="recordLapOnchange($event.value)" >
+                       <mat-option value="a" >Never</mat-option>
+                       <mat-option value="b">Always</mat-option>
+                       <mat-option value="c">Practice Only</mat-option>
+                   </mat-select>
+              
+                </mat-form-field>
+                </div> 
+
+                <p>
+                  Choose data you do not wish to see:
+                </p>
+
+              <div class="checkBoxes">
+                  <mat-checkbox formControlName="windDirection" ([ngModel])="windDirection">  Wind Direction</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="windVelocity" ([ngModel])="windVelocity">Wind Velocity</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="trackTemperature" ([ngModel])="trackTemperature">Track Temperature</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="airTemperature" ([ngModel])="airTemperature"> Air Temperature</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="fuelConsumption" ([ngModel])="fuelConsumption">Fuel Consumption</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="fuelLevel" ([ngModel])="fuelLevel">Fuel Level</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="YAW" ([ngModel])="YAW">YAW</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="pitch" ([ngModel])="pitch">Pitch</mat-checkbox>
+                  <br>
+                  <mat-checkbox  formControlName="roll" ([ngModel])="roll">Roll</mat-checkbox>
+                 
+              </div> 
+                
+            </div>
+            </div>
+    
+          </aside>
+         
+
+    </mat-tab>
+
+    <!-- Subscription -->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <i class="material-icons">event_available</i> &nbsp;
+        Subscription
+      </ng-template>
+      <aside>
+        <div class="content">
+          <div class="innnerContent">
+            <h4>
+              Current Subscription: Public
+            </h4>
+            <p>Valid until {{currentDate |date:'yyyy-MM-dd' }}</p>
+            <button mat-raised-button class="bgColor1 color5" (click)="incrementMonth()">Extend Public Subscription</button>
+          </div>
+       
+        </div>
+      </aside>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+</section>
+
+<app-footer></app-footer>

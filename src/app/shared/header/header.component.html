@@ -1,0 +1,61 @@
+<header>
+    <!-- <div class="container"> -->
+        <a href="" id="logo"></a>
+        <nav class="nav"  id="nav">
+            <aside >
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngIf="!auth">Home</a>
+                <a routerLink="/pricing" routerLinkActive="active"  *ngIf="!auth">Pricing</a>
+                <a routerLink="/car/track" routerLinkActive="active"  *ngIf="auth">Stints History</a>
+                <a routerLink="/telemetry" routerLinkActive="active"  *ngIf="auth">Last Stint</a>
+                <a routerLink="/upacks" routerLinkActive="active" >UPacks</a>
+                <a routerLink="/worldrecord" routerLinkActive="active" >World Records</a>
+                <a routerLink="/leaderboard" routerLinkActive="active" >Leaderboards</a>
+                <a routerLink="/sell-your-data" routerLinkActive="active" >Sell you data</a>
+                <a routerLink="/download" routerLinkActive="active" >Download</a>
+                <a routerLink="/faq" routerLinkActive="active" >FAQ</a>
+                <a routerLink="/contact" routerLinkActive="active" >Contact Us</a>
+            </aside>
+            <aside>
+                <!-- <span *ngIf="auth" > <strong>Recording Mode </strong> </span> -->
+                 <!-- <mat-slide-toggle>Private Mode</mat-slide-toggle>   -->
+                 <!-- <a *ngIf="prvMode" (click)="togglePrivate()">Private Mode</a> -->
+                 <a *ngIf="prvMode" style="border-bottom: none;cursor:text; " >Private Mode</a>
+                <!-- <a *ngIf="!prvMode" (click)="togglePrivate()">Public Mode</a>  -->
+                <a (click)="toggleAuth()" *ngIf="!auth" mat-raised-button color="accent"  class="logBtn">Login</a>
+                <button mat-icon-button [matMenuTriggerFor]="menu" class="menuBtn" *ngIf="auth">
+                    <i class="user"></i>
+                </button>
+                <mat-menu #menu="matMenu">
+
+                     <!-- <button mat-menu-item *ngIf="prvMode" (click)="togglePrivate()">
+                        Private Mode
+                    </button> -->
+                    <!-- <button mat-menu-item *ngIf="!prvMode" (click)="togglePrivate()">
+                        Public Mode
+                    </button>  -->
+                    
+                    <button mat-menu-item routerLink="/account">
+                       Account
+                    </button>
+                    <button mat-menu-item (click)="toggleAuth()">
+                        Logout
+                    </button>
+                </mat-menu>
+                
+            </aside>
+        </nav>
+        <a id="menuBtn" (click)="toggleMenu()"></a>
+    <!-- </div> -->
+</header>
+
+<!-- <div id="slideMenu" [ngClass] = "{'active':menu}">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="">About</a>
+    <a routerLink="">Car/Track</a>
+    <a routerLink="">Telemtry</a>
+    <a routerLink="">World Records</a>
+    <a routerLink="">Download</a>
+    <a routerLink="">Account</a>
+    <a routerLink="">Login</a>
+</div> -->
+

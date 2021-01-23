@@ -1,0 +1,208 @@
+section#pricing {
+  background-color: #fdfdfd;
+  padding: 120px 0 80px 0;
+}
+
+section#pricing h2 {
+  text-align: center;
+  color: #2e2e2e;
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 577px) {
+  section#pricing h2 {
+    font-size: 40px;
+  }
+}
+
+section#pricing .priceInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media (min-width: 577px) {
+  section#pricing .priceInner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+section#pricing .priceInner aside {
+  width: 100%;
+  background-color: #fdfdfd;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 8px 0 #B8B8B8;
+  box-shadow: 0 2px 8px 0 #B8B8B8;
+  margin: 20px 0;
+}
+
+@media (min-width: 577px) {
+  section#pricing .priceInner aside {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media (min-width: 993px) {
+  section#pricing .priceInner aside {
+    width: calc((100% - 60px) / 4);
+    margin: 0;
+  }
+}
+
+section#pricing .priceInner aside span {
+  width: 100%;
+  height: 220px;
+  display: inline-block;
+  background-color: #d3222a;
+  color: #fdfdfd;
+  border-radius: 5px 5px 0 0;
+}
+
+section#pricing .priceInner aside span i {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/assets/images/car-icon.jpg");
+  -webkit-box-shadow: 0 2px 6px 0 #B8B8B8;
+  box-shadow: 0 2px 6px 0 #B8B8B8;
+  background-color: #fdfdfd;
+}
+
+section#pricing .priceInner aside span i.black {
+  border: #2e2e2e solid 2px;
+}
+
+section#pricing .priceInner aside span i.red {
+  border: #d3222a solid 2px;
+}
+
+section#pricing .priceInner aside span i.green {
+  border: #5db346 solid 2px;
+}
+
+section#pricing .priceInner aside span i.blue {
+  border: #0e4a7e solid 2px;
+}
+
+section#pricing .priceInner aside span h3 {
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+section#pricing .priceInner aside span h4 {
+  font-size: 60px;
+  font-weight: 300;
+  margin: 40px 0 5px 0;
+}
+
+section#pricing .priceInner aside span h4 small {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+section#pricing .priceInner aside span h5 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+section#pricing .priceInner aside span h5 del {
+  font-size: 25px;
+}
+
+section#pricing .priceInner aside span h5 del small {
+  font-size: 14px;
+}
+
+section#pricing .priceInner aside span .line {
+  width: 50%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+}
+
+section#pricing .priceInner aside span.black {
+  background-color: #2e2e2e;
+}
+
+section#pricing .priceInner aside span.red {
+  background-color: #d3222a;
+}
+
+section#pricing .priceInner aside span.green {
+  background-color: #5db346;
+  border-color: #5db346;
+}
+
+section#pricing .priceInner aside span.blue {
+  background-color: #0e4a7e;
+  border-color: #0e4a7e;
+}
+
+section#pricing .priceInner aside ul {
+  padding: 40px 20px 25px 20px;
+}
+
+section#pricing .priceInner aside ul li {
+  list-style: none;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #58595b;
+  text-align: left;
+}
+
+section#pricing .priceInner aside ul li i {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/assets/icons/check-mark.svg");
+}
+
+section#pricing .priceInner aside a.btn {
+  margin: 10px 0 40px 0;
+}
+
+section#pricing .priceInner aside.black a.btn:hover {
+  background-color: #2e2e2e;
+  border-color: #2e2e2e;
+}
+
+section#pricing .priceInner aside.red a.btn:hover {
+  background-color: #d3222a;
+  border-color: #d3222a;
+}
+
+section#pricing .priceInner aside.green a.btn:hover {
+  background-color: #5db346;
+  border-color: #5db346;
+}
+
+section#pricing .priceInner aside.blue a.btn:hover {
+  background-color: #0e4a7e;
+  border-color: #0e4a7e;
+}
+/*# sourceMappingURL=pricing-pg.component.css.map */

@@ -1,0 +1,35 @@
+section#tabs {
+  /* Styles for tab labels */
+  /* Styles for the active tab label */
+  /* Styles for the ink bar */
+}
+
+section#tabs .mat-tab-label {
+  background-color: #fdfdfd;
+  color: #0e4a7e;
+  font-weight: 700;
+}
+
+section#tabs .mat-tab-label.mat-tab-label-active {
+  color: #d3222a;
+  font-weight: 700;
+}
+
+section#tabs .mat-ink-bar {
+  background-color: #d3222a;
+  color: #d3222a;
+}
+
+section#tabs aside {
+  margin: 0.5rem 2rem 0px;
+}
+
+section#tabs aside table.mat-table {
+  min-width: unset !important;
+}
+
+section#tabs aside .dropdown {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+/*# sourceMappingURL=upacks.component.css.map */

@@ -1,0 +1,49 @@
+@import '../../../assets/scss/lib.scss';
+section#menuDiv{
+    position: absolute;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-shadow: 0 2px 12px 0 #666666;
+     box-shadow: 0 2px 12px 0 #666666;
+     z-index: 2;
+  
+    .container{
+        padding:3em;
+        width: auto;
+        strong{
+            font-weight: bolder;
+            font-size: 1rem;
+            padding-bottom:1em;
+            padding-left: 2em;
+            color:$black;
+        }
+        .innerFlex{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            color:$gray;
+            padding-top: 0.5em;
+            cursor: pointer;
+            
+            
+            div{
+                padding: 0.3em;
+
+               i{
+                   font-size: 1.6rem;
+                   font-weight: bold;
+                   
+               }
+             
+            }
+          }
+         .innerFlex{
+           div:nth-child(3){
+            padding-left: 4rem;
+         }
+         } 
+    }
+
+}

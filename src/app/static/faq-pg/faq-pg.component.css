@@ -1,0 +1,49 @@
+section#faq {
+  padding: 120px 0 80px 0;
+}
+
+section#faq h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #2e2e2e;
+}
+
+@media (min-width: 993px) {
+  section#faq h2 {
+    font-size: 40px;
+  }
+}
+
+section#faq i.qts {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/assets/icons/question.svg");
+}
+
+section#faq p {
+  font-size: 14px;
+}
+
+@media (min-width: 577px) {
+  section#faq p {
+    font-size: 16px;
+  }
+}
+
+section#faq p img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section#faq p iframe {
+  max-width: 500px;
+  width: 100%;
+}
+/*# sourceMappingURL=faq-pg.component.css.map */

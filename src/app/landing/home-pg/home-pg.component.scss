@@ -1,0 +1,489 @@
+@import '../../../assets/scss/lib.scss';
+
+
+section#banner {
+    width: 100%;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/images/banner-1.jpg');
+    margin-top: 80px;
+    @include sm {
+        height: 400px;
+    }
+    .overlay {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+       
+        aside {
+            text-align: left;
+            color: $white;
+            h1 {
+                // font-family: 'Varela Round', sans-serif;
+                font-size: 34px;
+                margin-bottom: 10px;
+                color: $white;
+                @include sm {
+                    font-size: 50px;
+                    margin-bottom: 15px;
+                }
+            }
+            
+            p {
+                font-size: 18px;
+                color: $white;
+                @include sm {
+                    font-size: 20px;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+section#racingData,
+section#features,
+section#recordTable .overlay,
+section#games,
+section#data, 
+section#priceTable {
+    padding: 40px 0;
+    @include lg {
+        padding: 60px 0;
+    }
+    h2 {
+        // font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        color: $black;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        @include lg {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+section#racingData {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column nowrap;
+        @include lg {
+            flex-flow: row wrap;
+        }
+        span {
+            width: 100%;
+            height: 160px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-image: url('/assets/images/racing-car.png');
+            @include sm {
+                height: 300px;
+            }
+            @include lg {
+                width: 470px;
+            }
+            @include xl {
+                width: 600px;
+            }
+        }
+        aside {
+            width: 100%;
+            @include lg {
+                width: calc(100% - 490px);
+            }
+            @include xl {
+                width: calc(100% - 640px);
+            }
+            h2 {
+                text-align: left;
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+    
+}
+    
+
+section#features {
+    .featureItems {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        aside {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 10px 0;
+            @include sm {
+                width: calc((100% - 40px) / 2);
+                margin: 20px 0;
+            }
+            @include lg {
+                width: calc((100% - 40px) / 3);
+            }
+            i {
+                width: 40px;
+                height: 40px;
+                background-color: $red;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 30px;
+                display: block;
+                @include sm {
+                    width: 60px;
+                    height: 60px;
+                    background-size: 40px;
+                }
+            }
+            i.helmet {
+                background-image: url('/assets/icons/helmet.svg');
+            }
+            i.racingCar {
+                background-image: url('/assets/icons/racing-car.svg');
+            }
+            i.timer {
+                background-image: url('/assets/icons/timer.svg');
+            }
+            p {
+                width: calc(100% - 55px);
+                font-size: 16px;
+                line-height: 26px;
+                @include sm {
+                    width: calc(100% - 80px);
+                }
+            }
+        }
+    }
+    
+}
+
+section#recordTable {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/images/car-img.jpg');
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+        @include lg {
+            flex-flow: row wrap;
+        }
+        h2 {
+            color: $white !important;
+            text-align: left;
+        }
+        .rdTable {
+            width: 100%;
+            @include lg {
+                width: calc(100% - 420px);
+            }
+        }
+        .topDriver {
+            width: 100%;
+            @include lg {
+                width: 400px;
+            }
+            h2 {
+                margin-top: 40px;
+                @include lg {
+                    margin-top: 0;
+                }
+            }
+            table#rankTable {
+                width: 200px !important;
+            }
+        }
+    }
+}
+
+section#games {
+    width: 100%;
+    background-color: $black;
+    
+    .container {
+        
+        h2 {
+            text-align: center;
+            color: $white;
+            @include sm {
+                text-align: left;
+            }
+        }
+        .gamesInner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: column nowrap;
+            @include lg {
+                flex-flow: row wrap;
+            }
+            aside {
+                width: 100%;
+                @include lg {
+                    width: calc(100% - 580px);
+                }
+                @include xl {
+                    width: calc(100% - 650px);
+                }
+                .gamesList {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-flow: column nowrap;
+                    @include sm {
+                        flex-flow: row wrap;
+                    }
+                    ul {
+                        width: 100%;
+                        margin: 0 10px;
+                        @include sm {
+                            width: calc((100% - 40px) / 2);
+                            margin: 0;
+                        }
+                        li {
+                            list-style: none;
+                            margin: 3px 0;
+                            font-size: 18px;
+                            color: $white;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            @include sm {
+                                font-size: 25px;
+                                margin: 10px 0;
+                            }
+                            i {
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 100%;
+                                background-color: $red;
+                                display: inline-block;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 15px;
+                                @include sm {
+                                    width: 30px;
+                                    height: 30px;
+                                    background-size: 20px;
+                                }
+                            }
+                            i.helmet {
+                                background-image: url('/assets/icons/helmet.svg');
+                            }
+                            i.racingCar {
+                                background-image: url('/assets/icons/racing-car.svg');
+                            }
+                            i.timer {
+                                background-image: url('/assets/icons/timer.svg');
+                            }
+                            p {
+                                width: calc(100% - 50px);
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: $white;
+                                @include sm {
+                                    font-size: 20px;
+                                    line-height: 28px;
+                                }
+                            }
+                        }
+                        li:first-child {
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+               
+                
+            }
+            span {
+                width: 100%;
+                height: 100px;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: contain;
+                background-image: url('/assets/images/racing-car.png');
+                @include sm {
+                    height: 250px;  
+                }
+                @include lg {
+                    width: 560px; 
+                    height: 280px;
+                }
+                @include xl {
+                    width: 600px;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+section#data {
+    text-align: center;
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+        @include sm {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+section#priceTable {
+    background-color: $black;
+    h2 {
+        color: $white;
+        margin-bottom: 20px;
+        @include md {
+            margin-bottom: 70px;
+        }
+        @include lg {
+            margin-bottom: 90px;
+        }
+    }
+    .priceInner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column nowrap;
+        @include md {
+            flex-flow: row wrap;
+        }
+        aside {
+            width: 100%;
+            background-color: $white;
+            text-align: center;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 2px 15px 5px #3030309a;
+            box-shadow: 0 2px 15px 5px #3030309a;
+            margin: 20px 0;
+            @include md {
+                width: calc((100% - 20px) / 3);
+                margin: 0;
+            }
+            span {
+                width: 100%;
+                height: 240px;
+                display: inline-block;
+                background-color: $red;
+                color: $white;
+                border-radius: 5px 5px 0 0;
+                i {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url('/assets/images/car-icon.jpg');
+                    -webkit-box-shadow: 0 2px 6px 0 #B8B8B8;
+                    box-shadow: 0 2px 6px 0 #B8B8B8;
+                    background-color: $white;
+                }
+                i.red {
+                    border: $red solid 2px;
+                }
+                i.green {
+                    border: $green solid 2px;
+                }
+                i.blue {
+                    border: $blue solid 2px;
+                }
+                h3 {
+                    padding: 10px 0;
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin: 20px 0 10px 0;
+                }
+                h4 {
+                    font-size: 60px;
+                    font-weight: 300;
+                    margin: 60px 0 25px 0;
+                    small {
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                }
+                .line {
+                    width: 50%;
+                    height: 1px;
+                    margin: 0 auto;
+                    background-color: $white;
+                }
+            }
+            span.red {
+                background-color: $red;
+            }
+            span.green {
+                background-color: $green;
+                border-color: $green;
+            }
+            span.blue {
+                background-color: $blue;
+                border-color: $blue;
+            }
+            
+            ul {
+                padding: 20px 40px;
+                
+                li {
+                    list-style: none;
+                    margin: 5px 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $gray;
+                    text-align: left;
+                    i {
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 10px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        background-image: url('/assets/icons/check-mark.svg');
+                    }
+                }
+            }
+            a.btn{
+                margin: 10px 0 40px 0;
+            }
+        }
+        aside:nth-child(2) {
+            transform: none;
+            @include md {
+                transform: scale(1.1);
+            }
+            a.btn:hover {
+                background-color: $green;
+                border-color: $green;
+            }
+        }
+        aside:last-child {
+            a.btn:hover {
+                background-color: $blue;
+                border-color: $blue;
+            }
+        }
+    }
+    
+}

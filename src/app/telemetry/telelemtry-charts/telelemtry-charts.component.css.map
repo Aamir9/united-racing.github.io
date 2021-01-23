@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,OADG,AAAA,OAAO,CACV,QAAQ,CAAA;EACJ,MAAM,EAAE,GAAG;EACX,kBAAkB,EAAE,oBAAoB;EACxC,UAAU,EAAE,oBAAoB;CACnC",
+    "sources": [
+        "telelemtry-charts.component.scss"
+    ],
+    "names": [],
+    "file": "telelemtry-charts.component.css"
+}

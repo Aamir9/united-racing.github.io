@@ -1,0 +1,120 @@
+@import '../../../assets/scss/lib.scss';
+section#sellData,
+section#contactUs {
+    h2 {
+        // font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        color: $black;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        @include sm {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+}
+section#sellData {
+    padding: 120px 0 40px 0;
+    .sellInner {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        aside {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 8px 0;
+            @include sm {
+                width: calc((100% - 40px) / 2);
+                margin: 20px 0;
+            }
+            @include lg {
+                width: calc((100% - 40px) / 3);
+            }
+            i {
+                width: 40px;
+                height: 40px;
+                background-color: $red;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 30px;
+                display: block;
+                @include sm {
+                    width: 60px;
+                    height: 60px;
+                    background-size: 40px;
+                }
+            }
+            i.helmet {
+                background-image: url('/assets/icons/helmet.svg');
+            }
+            i.racingCar {
+                background-image: url('/assets/icons/racing-car.svg');
+            }
+            i.timer {
+                background-image: url('/assets/icons/timer.svg');
+            }
+            p {
+                width: calc(100% - 60px);
+                font-size: 16px;
+                line-height: 26px;
+                @include sm {
+                    width: calc(100% - 80px);
+                }
+            }
+        }
+    }
+    
+}
+
+section#contactUs {
+    padding: 60px 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('/assets/images/car-img-dark.jpg');
+    h2 {
+        color: $white;
+    }
+    form {
+        max-width: 580px;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        padding: 15px 10px 50px 10px;
+        @include sm {
+            width: calc(100% - 80px);
+            padding: 20px 40px 60px 40px;
+        }
+        
+        .nameArea {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column nowrap;
+            @include md {
+                flex-flow: row wrap;
+            }
+        }
+        .formGrp {
+            aside {
+                width: 100%;
+                @include md {
+                    width: calc((100% - 20px) / 2);
+                }
+            }
+            aside:first-child {
+                margin-bottom: 20px;
+                @include md {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,57 @@
+section#menuDiv {
+  position: absolute;
+  background-color: #fdfdfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0 2px 12px 0 #666666;
+  box-shadow: 0 2px 12px 0 #666666;
+  z-index: 1001;
+}
+
+section#menuDiv .container {
+  padding: 3em;
+  width: auto;
+}
+
+section#menuDiv .container strong {
+  font-weight: bolder;
+  font-size: 1rem;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  color: #2e2e2e;
+}
+
+section#menuDiv .container .innerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  color: #58595b;
+  padding-top: 0.5em;
+  cursor: pointer;
+}
+
+section#menuDiv .container .innerFlex div {
+  padding: 0.3em;
+}
+
+section#menuDiv .container .innerFlex div i {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+section#menuDiv .container .innerFlex div:nth-child(3) {
+  padding-left: 4rem;
+}
+/*# sourceMappingURL=lap-selection.component.css.map */
